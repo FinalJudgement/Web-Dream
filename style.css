@@ -46,10 +46,6 @@ nav ul li {
 
 }
 
-ul {
-    width: auto;
-    height: 100%;
-}
 
 .nav-link {
     position: relative;
@@ -58,7 +54,7 @@ ul {
     background-color: rgb(54, 54, 114);
     padding: 4px;
     top: 50px;
-    right: 65.5%;
+    right: 58.5%;
     margin: 0 3px;
     border-radius: .3em;
 }
@@ -81,12 +77,13 @@ ul {
 }
 
 
+header {
+    text-align: center;
+}
 
 #jumbotron {
-    padding-top: 70px;
     padding-bottom: 35px;
     width: 650px;
-    margin: 0 auto;
 }
 
 main {
@@ -95,7 +92,7 @@ main {
 }
 
 #jumbo-container {
-    height: 50vh;
+    height: 54vh;
     width: 58vw;
     margin: 0 auto;
     padding: 0;
@@ -114,12 +111,14 @@ main {
 
 .img-link img {
     object-fit: cover;
+
     width: 450px;
     height: 320px;
 }
 
 .img-cover {
     position: absolute;
+    color: white;
     width: 450px;
     height: 320px;
     background-color: rgba(15, 22, 61, 0.452);
@@ -129,7 +128,6 @@ main {
 }
 
 .img-cover:hover {
-    /* background-color: rgba(99, 99, 99, 0.877); */
     color: #7baafa;
 }
 
@@ -137,10 +135,7 @@ section {
     margin: 50px 0;
     padding: 20px;
     background-color: rgba(56, 53, 68, 0.692);
-}
-
-.white-text {
-    color: rgb(255, 255, 255);
+    border-radius: 1em;
 }
 
 footer {
@@ -189,5 +184,60 @@ p {
 }
 
 hr {
-    display: none;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(202, 202, 202, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 50px;
+}
+
+.req-pg-set {
+    margin-top: 100px;
+}
+
+fieldset {
+    width: 55%;
+}
+
+table {
+
+    color: rgb(212, 212, 212);
+    background-color: rgba(92, 90, 97, 0.692);
+}
+
+table,
+th,
+td {
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+audio {
+    position: sticky;
+    width: 200px;
+    top: 35vh;
+    left: 83vw;
+}
+
+video {
+    position: sticky;
+    width: 300px;
+    height: auto;
+    top: 100px;
+    left: 80vw;
+    opacity: 40%;
+}
+
+video:hover {
+    opacity: 100%;
+}
+
+form p {
+    font-size: 20px;
 }

@@ -16,30 +16,40 @@
 
     <nav>
         <ul>
-            <li id="logo"><a href="index.html"><Img src="images\img1.png"></Img></a></li>
+            <li id="logo"><a href="index.html"><Img src="images/img1.png" alt=" home"></a></li>
             <li id="divider"></li>
             <li id="nav-bg"></li>
+            <li class="nav-link"><a href="summary.html">Summary</a></li>
             <li class="nav-link"><a href="requirements.html">Requirements</a></li>
             <li class="nav-link"><a href="benefits.html">Benefits</a></li>
-
+            <li class="nav-link"><a href="index.html"><img src="images/icon3.png" style="width:20px; height: 15px;"
+                        alt="home"></a></li>
         </ul>
     </nav>
+    <audio src="media/audio1.mp3"></audio>
+
+    <video id='my-video' height="500" controls>
+        <source src="media/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio id='my-audio' controls>
+        <source src="media/audio1.mp3" type="audio/mpeg">
+    </audio>
 
     <header>
-        <div id="jumbotron">
-            <img id="jumbotron" src="images\img2.png" alt="">
-        </div>
+        <img id="jumbotron" src="images/img2.png" alt="">
     </header>
     <main>
         <section>
             <h1>Welcome to Web Dream</h1>
             <p>Hello and welcome to <strong style="color: #7baafa;">Web Dream</strong>. <br><br>I created Web Dream
                 because I am passionate about web development and I wanted to show you why I think it's the right
-                career for me. I believe that people should desire to find a rewarding career that they actually
+                career for me. I believe that people should desire to find a rewarding career that they
                 enjoy. I would like to share with you what Web Development is, the expectations that come with
-                the job, along with all of the benefits that personally drew my attention towards this career.
-                I'm going to start off from the beginning and explain piece by piece why I think Web Development
-                is an exciting career to start, and my hope is that you will have a better understanding of
+                the job, along with all of the benefits that personally drew my attention to this career.
+                I'm going to start from the beginning and explain piece by piece why I think Web Development
+                is an exciting career to start, and I hope that you will have a better understanding of
                 what a Web Developer does. Below you'll find resources that will help guide you through this
                 website. <br> <br> I hope that this website inspires you to "<em style="color: #7baafa;">Follow your
                     dream</em> ".
@@ -52,19 +62,29 @@
                 <div>
                     <h2>Education Requirements</h2>
                     <div class="img-link">
-                        <div class="img-cover black-text" onmouseover="style.backgroundColor= 'rgba(99, 99, 99, 0.877)'"
-                            onmouseout="style.backgroundColor= 'rgba(15, 22, 61, 0.452)'">How to get
-                            qualified.
-                        </div><img src=" images\img3.jpg" alt="">
+                        <a href="requirements.html">
+                            <div id="img-cover1" class="img-cover"
+                                onmouseover="style.backgroundColor= 'rgba(99, 99, 99, 0.877)', document.querySelector('#img-cover1').innerText ='Click to find out more.'"
+                                onmouseout="style.backgroundColor= 'rgba(15, 22, 61, 0.452)', document.querySelector('#img-cover1').innerText ='How to get qualified.'">
+                                How to get
+                                qualified.
+                            </div>
+                        </a>
+                        <img src=" images/img3.jpg" alt="">
                     </div>
                 </div>
                 <!-- Second jumbotron image with hover cover and link -->
                 <div>
                     <h2>Benefits and Salary</h2>
                     <div class="img-link">
-                        <div class="img-cover white-text" onmouseover="style.backgroundColor= 'rgba(99, 99, 99, 0.877)'"
-                            onmouseout="style.backgroundColor= 'rgba(15, 22, 61, 0.452)'">Learn about benefits.</div>
-                        <img src="images\img4.jpg" alt="">
+                        <a href="benefits.html">
+                            <div id="img-cover2" class="img-cover"
+                                onmouseover="style.backgroundColor= 'rgba(99, 99, 99, 0.877)', document.querySelector('#img-cover2').innerText ='Click to find out more.'"
+                                onmouseout="style.backgroundColor= 'rgba(15, 22, 61, 0.452)', document.querySelector('#img-cover2').innerText ='Learn about benefits.'">
+                                Learn about benefits.
+                            </div>
+                        </a>
+                        <img src="images/img4.jpg" alt="">
                     </div>
                 </div>
 
@@ -74,13 +94,62 @@
         <section>
             <h1>What is a Web Developer?</h1>
             <p>
-                First we need to understand what Web Developing is? Web developing is the practice of creating
+                First, we need to understand what Web Developing is. Web development is the practice of creating
                 websites, and there are many different avenues and job roles within web development. However,
-                generally Web developers create interesting, unique and beautiful looking websites that function
-                according to the needs of the company. Developers also responsible for maintaining companies
-                website, as well as update it according to the companies needs.
+                generally, web developers create interesting, unique, and beautiful=looking websites that function
+                according to the needs of the company. Developers are also responsible for maintaining companies
+                website, as well as updating it according to the company's needs.
             </p>
-            <h2>Other Responsibilities</h2>
+            <p>Some of the different roles that web developers specialize in are:</p>
+            <ul>
+                <li>Front-end web developer</li>
+                <li>Back-end web developer</li>
+                <li>FullStack Web Developer</li>
+                <li>Webmaster</li>
+            </ul>
+
+            <br>
+            <hr>
+            <br>
+
+            <h2>Front-end web developer</h2>
+            <p>
+                Front-end developers create functionality and features for a websites UI. They typically create
+                the design of the website according to what is required. You can usually see the work of a front-end
+                developer by going to any website.
+            </p>
+
+            <br>
+            <hr>
+            <br>
+
+            <h2>Back-end web developer</h2>
+            <p>
+                Back-end developers are responsible for the more technical side of the website. I consider them to be
+                more behind the scenes. They ensure that all the website's features work properly and are in charge of
+                the functionality instead of the appearance of the website.
+            </p>
+
+            <br>
+            <hr>
+            <br>
+
+            <h2>FullStack Web Developer</h2>
+            <p>
+                A FullStack Web Developer is a professional that is proficient and able to fill the role of both
+                front-end and back-end web development.
+            </p>
+
+            <br>
+            <hr>
+            <br>
+
+            <h2>Webmaster</h2>
+            <p>
+                Webmasters are usually in charge of the upkeep of an already finished website. They typically maintain
+                the finished product and will test the website from time to time to ensure it works properly.
+
+            </p>
         </section>
 
     </main>
@@ -88,14 +157,19 @@
     <footer>
 
         <div>
-            <img src="images\img5.png" style="width: 200px;" alt="">
-            <a target="_blank" href="https://www.instagram.com/"><img src="images\icon1.png" alt="instagram link"></a>
-            <a target="_blank" href="https://www.facebook.com/""><img src=" images\icon2.png" alt="facebook link"></a>
+            <img src="images/img5.png" style="width: 200px;" alt="logo">
+            <a target="_blank" href="https://www.instagram.com/"><img src="images/icon1.png" alt="instagram link"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src=" images/icon2.png" alt="facebook link"></a>
         </div>
-        <hr>
-        <span id="copyright">© Floppysprite</span>
+
+        <span id="copyright"><img src="images/icon4.png" style="width:15px;" alt="floppy sprite"> Floppysprite</span>
 
         <p>
+            <a target="_blank" href="https://icons8.com/icon/2797/home">Home<span style="color: white;">,</span></a>
+
+            <a target="_blank" href="https://icons8.com/icon/vtPrmwNH0eI0/floppy">Floppy<span
+                    style="color: white;">,</span></a>
+
             <a target="_blank" href="https://icons8.com/icon/32323/instagram">Instagram</a>
             and
             <a target="_blank" href="https://icons8.com/icon/13912/facebook">Facebook</a>
